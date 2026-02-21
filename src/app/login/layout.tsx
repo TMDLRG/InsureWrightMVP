@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign In — InsureWright Onboarding",
+  title: "Sign In — InsureWright MVP Vision",
 };
 
 export default function LoginLayout({
