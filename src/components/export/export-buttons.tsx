@@ -19,7 +19,7 @@ export function ExportButtons({ exportData }: ExportButtonsProps) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `insurewright-onboarding-export-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `insurewright-mvp-vision-export-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
     setJsonDownloaded(true);
@@ -29,7 +29,7 @@ export function ExportButtons({ exportData }: ExportButtonsProps) {
 
   const downloadMarkdown = () => {
     const data = JSON.parse(exportData);
-    let md = `# InsureWright Onboarding — Stakeholder Export\n\nGenerated: ${new Date().toLocaleDateString()}\n\n---\n\n`;
+    let md = `# InsureWright MVP Vision — Product Decision Export\n\nGenerated: ${new Date().toLocaleDateString()}\n\n---\n\n`;
 
     for (const cat of data) {
       md += `## ${cat.category}\n\n`;
@@ -87,7 +87,7 @@ export function ExportButtons({ exportData }: ExportButtonsProps) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `insurewright-onboarding-export-${new Date().toISOString().slice(0, 10)}.md`;
+    a.download = `insurewright-mvp-vision-export-${new Date().toISOString().slice(0, 10)}.md`;
     a.click();
     URL.revokeObjectURL(url);
     setMdDownloaded(true);

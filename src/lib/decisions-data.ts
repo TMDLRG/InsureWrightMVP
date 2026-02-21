@@ -72,7 +72,7 @@ export const CATEGORIES: Category[] = [
 ];
 
 // ============================================================
-// DECISION DEFINITIONS — 69 items across 8 categories
+// DECISION DEFINITIONS — 67 items across 8 categories
 // ============================================================
 
 export const DECISIONS: DecisionDefinition[] = [
